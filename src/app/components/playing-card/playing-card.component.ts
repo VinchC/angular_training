@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Monster } from '../../models/monster.models';
 
 @Component({
   selector: 'app-playing-card',
@@ -8,11 +9,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './playing-card.component.css',
 })
 export class PlayingCardComponent {
-  @Input() name: string | undefined;
-  @Input() hp: number | undefined;
-  @Input() picture: string | undefined;
-  @Input() figureCaption: string | undefined;
-  @Input() attackName: string | undefined;
-  @Input() attackStrength: number | undefined;
-  @Input() attackDescription: string | undefined;
+  @Input() monster: Monster = new Monster();
 }
