@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { PlayingCardComponent } from './components/playing-card/playing-card.component';
 import { Monster } from './models/monster.models';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [PlayingCardComponent],
+  imports: [SearchBarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
