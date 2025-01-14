@@ -12,9 +12,8 @@ import { SearchBarComponent } from './components/search-bar/search-bar.component
 })
 export class AppComponent {
   monster1!: Monster;
-  count = 0;
   monster2!: Monster;
-
+  
   constructor() {
     this.monster1 = new Monster();
     this.monster1.name = 'Pik';
@@ -23,8 +22,8 @@ export class AppComponent {
     this.monster1.attackName = 'Whatever';
     this.monster1.attackStrength = 80;
     this.monster1.attackDescription =
-      "This is a WAYYYY too long description and I don't know what to add - is it long enough ?";
-
+    "This is a WAYYYY too long description and I don't know what to add - is it long enough ?";
+    
     this.monster2 = new Monster();
     this.monster2.name = 'Pik';
     this.monster2.hp = 84;
@@ -32,6 +31,12 @@ export class AppComponent {
     this.monster2.attackName = 'Geo Impact';
     this.monster2.attackStrength = 60;
     this.monster2.attackDescription =
-      "This is a long description and I don't know what to add - is it long enough ?";
+    "This is a long description and I don't know what to add - is it long enough ?";
+  }
+  
+  count = 0;
+
+  increaseCount() {
+    this.count++;
   }
 }
