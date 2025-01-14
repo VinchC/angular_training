@@ -12,6 +12,7 @@ import { SearchBarComponent } from './components/search-bar/search-bar.component
 })
 export class AppComponent {
   monster1!: Monster;
+  count = 0;
   monster2!: Monster;
 
   constructor() {
