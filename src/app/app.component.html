@@ -3,5 +3,7 @@
   <app-playing-card [my-monster]="monster2" />
 </div> -->
 
-<app-search-bar (searchButtonClicked)="increaseCount()" />
-Click count : {{count}}
+<app-search-bar (searchButtonClicked)="increaseCount()" [(search)]="search2"/>
+
+Search: {{ search2 }} <br/>
+Click count: {{count}}
